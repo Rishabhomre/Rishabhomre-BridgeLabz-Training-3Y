@@ -1,0 +1,7 @@
+/* Bootstrap pagination and flex utilities handle alignment and mobile wrapping. */
+:root { --bs-primary: #a14f35; --bs-primary-rgb: 161,79,53; }
+.archive-header { border-bottom: 1px solid #e9e1dc; }
+.brand { font-family: Georgia, serif; font-size: 1.5rem; color: #342923; text-decoration: none; }
+.archive-label { color: var(--bs-primary); letter-spacing: .12em; }
+.post-preview { border: 1px solid #e9e1dc; border-radius: .9rem; background: #fffdfa; }
+.post-preview h2 { font-family: Georgia, serif; }

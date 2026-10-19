@@ -1,0 +1,7 @@
+/* Badge colors communicate priority without relying on text color alone. */
+:root { --bs-primary: #5c51c8; --bs-primary-rgb: 92,81,200; }
+.task-header { background: #f6f5ff; border-bottom: 1px solid #e7e4ff; }
+.navbar-brand { letter-spacing: -.04em; font-size: 1.5rem; }
+.navbar-brand span { color: var(--bs-primary); }
+.task-dot { width: 10px; height: 10px; flex: 0 0 10px; border-radius: 50%; }
+.task-dot.high { background: #dc3545; } .task-dot.medium { background: #ffc107; } .task-dot.low { background: #198754; }

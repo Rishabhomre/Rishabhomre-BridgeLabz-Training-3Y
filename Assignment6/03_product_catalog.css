@@ -1,0 +1,7 @@
+/* Grid breakpoints: col-12 on phones, col-sm-6 on small screens, col-md-3 on desktop. */
+:root { --bs-primary: #256d5a; --bs-primary-rgb: 37,109,90; }
+body { background: #fcfcfa; }
+.store-header { border-bottom: 1px solid #e7e8e2; }
+.product-card { border: 0; border-radius: 1rem; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+.product-card img { height: 220px; object-fit: cover; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 1rem 2rem #152a241a !important; }

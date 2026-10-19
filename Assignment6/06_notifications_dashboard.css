@@ -1,0 +1,5 @@
+/* Bootstrap alert variants provide clear contextual states; this section replaces old-style wells. */
+:root { --bs-primary: #5b5bd6; --bs-primary-rgb: 91,91,214; }
+.dashboard-bg { background: #f4f6fb; }
+.dash-header { background: #20243a; }
+.summary-well { border: 1px solid #dce1ed; }

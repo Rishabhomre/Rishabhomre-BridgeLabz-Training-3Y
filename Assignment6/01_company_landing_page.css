@@ -1,0 +1,11 @@
+/* Small brand layer on top of Bootstrap's responsive grid and utilities. */
+:root { --bs-primary: #4f46e5; --bs-primary-rgb: 79,70,229; }
+body { color: #182033; }
+.site-header, .footer { background: #111827; color: #f9fafb; }
+.hero { background: linear-gradient(135deg, #f5f7ff, #eef7ff); }
+.eyebrow { color: var(--bs-primary); font-weight: 800; letter-spacing: .16em; font-size: .8rem; }
+.hero h1 span { color: var(--bs-primary); }
+.hero-image { width: 100%; max-height: 390px; object-fit: cover; border-radius: 1.5rem; box-shadow: 0 1rem 2.5rem #1f293733; }
+.feature-card { border: 1px solid #e5e7eb; border-radius: 1rem; background: white; transition: transform .2s, box-shadow .2s; }
+.feature-card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem #11182712; }
+.section-copy { max-width: 620px; }

@@ -1,0 +1,14 @@
+/* Bootstrap CSS custom properties are overridden for a consistent custom theme. */
+:root { --bs-primary: #b4533c; --bs-primary-rgb: 180,83,60; --bs-font-sans-serif: 'DM Sans', sans-serif; --bs-body-font-family: var(--bs-font-sans-serif); --bs-body-color: #292b29; }
+h1, h2, h3, .blog-brand { font-family: 'Playfair Display', serif; }
+.blog-brand { font-size: 1.7rem; font-weight: 700; }
+.blog-brand span { color: var(--bs-primary); }
+.blog-hero { background: #f7eee7; }
+.blog-hero h1 { line-height: 1.08; }
+.blog-hero h1 em { color: var(--bs-primary); }
+.blog-card { border: 1px solid #eee3db; border-radius: 1rem; overflow: hidden; transition: transform .2s, box-shadow .2s; }
+.blog-card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem #3d241515; }
+.blog-card .card-img-top { height: 250px; object-fit: cover; }
+.blog-category { color: var(--bs-primary); font-weight: 700; letter-spacing: .06em; }
+.about-box { background: #eaf1eb; }
+.blog-footer { background: #292b29; color: #fffaf5; }

@@ -1,0 +1,11 @@
+/* Bootstrap's col-md-4 creates three columns on medium screens and stacks on mobile. */
+:root { --bs-primary: #5146d8; --bs-primary-rgb: 81,70,216; }
+body { background: #fbfbff; }
+.pricing-header { background: #f0efff; }
+.pricing-card { border: 1px solid #e6e5f2; border-radius: 1.25rem; transition: transform .25s ease, box-shadow .25s ease; }
+.pricing-card:hover { transform: translateY(-7px); box-shadow: 0 1rem 2.5rem #1c17451c; }
+.pro-plan { background: var(--bs-primary); color: #fff; border-color: var(--bs-primary); transform: scale(1.02); }
+.pro-plan:hover { transform: scale(1.02) translateY(-7px); }
+.price { font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; letter-spacing: -.05em; margin: 1.5rem 0; }
+.price span { font-size: .9rem; font-weight: 400; letter-spacing: 0; color: inherit; opacity: .7; }
+.feature-list li { margin-bottom: .85rem; }

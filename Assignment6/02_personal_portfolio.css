@@ -1,0 +1,5 @@
+/* Bootstrap utility classes handle spacing, alignment, and responsive columns. */
+:root { --bs-primary: #0f766e; --bs-primary-rgb: 15,118,110; }
+.portfolio-header { background: linear-gradient(135deg, #dff7f2, #f4fbff); }
+.profile-image { width: 220px; height: 220px; object-fit: cover; border: 8px solid #e8f7f5; }
+.contact-panel { background: #eaf7f5; }

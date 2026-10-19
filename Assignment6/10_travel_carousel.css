@@ -1,0 +1,13 @@
+/* Bootstrap Carousel and progress utilities provide responsive interactive components. */
+:root { --bs-primary: #147d77; --bs-primary-rgb: 20,125,119; }
+.travel-nav { background: #123b3b; }
+.travel-nav .navbar-brand span { color: #70d8c5; }
+.travel-label { color: var(--bs-primary); letter-spacing: .12em; }
+.destination-carousel { box-shadow: 0 1rem 2.5rem #102d2d20; }
+.destination-carousel .carousel-item img { height: clamp(360px, 55vw, 590px); object-fit: cover; filter: brightness(.72); }
+.destination-carousel .carousel-caption { left: 8%; right: 8%; bottom: 10%; text-shadow: 0 2px 12px #0008; }
+.destination-carousel .carousel-caption p { max-width: 520px; }
+.progress { background: #e1efed; }
+.progress-bar { background-color: var(--bs-primary); }
+.travel-footer { background: #123b3b; color: #f4fffc; }
+.travel-footer a { color: #9de4d7; text-decoration: none; }

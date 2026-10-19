@@ -1,0 +1,6 @@
+/* Bootstrap table, list-group, and responsive image components keep this menu adaptable. */
+:root { --bs-primary: #9b4d2e; --bs-primary-rgb: 155,77,46; }
+.restaurant-header { color: #fffaf2; background: linear-gradient(120deg, #35251d, #8c4d32); }
+.restaurant-header .lead { color: #f2d9c8; }
+.menu-image { width: 100%; max-height: 330px; object-fit: cover; }
+.restaurant-footer { background: #f6eee6; color: #604538; }
