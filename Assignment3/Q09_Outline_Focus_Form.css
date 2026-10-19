@@ -1,0 +1,18 @@
+/* Form controls use consistent spacing, padding, and rounded corners. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #233047; background: #f3f7fb; }
+header, footer { text-align: center; padding: 22px 16px; }
+main { max-width: 720px; margin: auto; padding: 16px 22px 36px; }
+.contact-form { display: grid; gap: 10px; padding: 26px; background: white; border-radius: 16px; box-shadow: 0 8px 24px #24385814; }
+label { margin-top: 6px; font-weight: 700; }
+input, textarea { width: 100%; padding: 12px 14px; border: 1px solid #bac5d5; border-radius: 8px; font: inherit; background: #fbfdff; }
+textarea { resize: vertical; }
+input:focus, textarea:focus { outline: 3px solid #4789e8; outline-offset: 3px; border-color: #4789e8; }
+button { justify-self: start; margin-top: 8px; padding: 12px 22px; border: 0; border-radius: 8px; background: #2459a6; color: white; font-weight: 700; cursor: pointer; box-shadow: 0 4px 10px #2459a633; }
+button:focus { outline: 3px solid #f0ad3d; outline-offset: 4px; }
+.outline-samples { margin-top: 30px; padding: 20px; background: white; border-radius: 14px; }
+.outline-samples p { padding: 12px; background: #f7f9fc; }
+.outline-dotted { outline: 2px dotted #4f6f9f; }
+.outline-dashed { outline: 2px dashed #7d55ba; }
+.outline-double { outline: 4px double #23846d; outline-offset: 4px; }
+footer { color: #65738a; }

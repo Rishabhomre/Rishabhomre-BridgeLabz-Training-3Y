@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="Q05_Advanced_Selectors.css">
+</head>
+<body>
+  <header><h1>Advanced CSS Selectors</h1><p>Inspect the CSS comments to see how each selector works.</p></header>
+  <main>
+    <section class="panel">
+      <h2>Attribute selectors</h2>
+      <label for="sample-text">Text input</label>
+      <input id="sample-text" type="text" placeholder="Type something">
+      <p><a href="https://example.com">Secure-style HTTPS link</a></p>
+    </section>
+    <section class="panel list-panel">
+      <h2>List and combinator practice</h2>
+      <ul class="item-list">
+        <li>First item</li>
+        <li>Second item <span>(nested descendant)</span></li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+      </ul>
+      <p class="intro">This paragraph follows the list.</p>
+      <p class="later">This paragraph is another sibling.</p>
+      <button type="button">Hover or focus me</button>
+    </section>
+  </main>
+  <footer><p>Selectors make styling precise without adding JavaScript.</p></footer>
+</body>
+</html>

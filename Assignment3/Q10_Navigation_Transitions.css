@@ -1,0 +1,28 @@
+/* Desktop navigation is horizontal; the media query stacks it on narrow screens. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1d2a3c; background: #f7f9fc; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 14px 6%; background: #fff; border-bottom: 1px solid #dce3ed; }
+.brand { color: #254e8c; font-size: 1.35rem; font-weight: 800; text-decoration: none; letter-spacing: -.03em; }
+.navbar { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.navbar a { display: block; padding: 12px 15px; border: 1px solid transparent; border-radius: 8px; color: #46546a; text-decoration: none; transition: all 0.3s ease; }
+.navbar a:hover { background: #edf3ff; border-color: #bfd0ed; color: #204b8d; }
+.navbar a.active { background: #254e8c; color: white; border-color: #254e8c; box-shadow: inset 0 -3px 0 #f0bd59; }
+.hero { min-height: 430px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 70px max(8%, calc((100% - 1000px) / 2)); background: linear-gradient(120deg, #e7efff, #f8f3ff); }
+.eyebrow { font-size: .78rem; letter-spacing: .18em; font-weight: 700; color: #536da0; }
+.hero h1 { max-width: 700px; margin: 8px 0 16px; font-size: clamp(2.3rem, 5vw, 4.2rem); line-height: 1.05; letter-spacing: -.04em; }
+.hero p:not(.eyebrow) { max-width: 620px; line-height: 1.7; color: #536178; }
+.cta { margin-top: 14px; padding: 13px 19px; border-radius: 8px; background: #254e8c; color: white; text-decoration: none; transition: all 0.3s ease; }
+.cta:hover { background: #173663; transform: translateY(-2px); }
+.info-section { max-width: 900px; margin: 0 auto; padding: 34px 24px; border-bottom: 1px solid #e1e7f0; }
+.info-section h2 { margin-bottom: 8px; }
+.info-section p { line-height: 1.6; color: #5d6a7e; }
+footer { padding: 20px; text-align: center; background: #17243a; color: #e5ebf5; }
+/* At widths below 700px, links stack vertically and fill the available width. */
+@media (max-width: 700px) {
+  .site-header { flex-direction: column; align-items: stretch; }
+  .brand { text-align: center; }
+  .navbar { flex-direction: column; }
+  .navbar li, .navbar a { width: 100%; text-align: center; }
+  .hero { min-height: 360px; padding: 50px 24px; }
+}

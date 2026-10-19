@@ -1,0 +1,21 @@
+/* The nested colors make each box-model layer visible. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #253047; background: #f5f8fc; }
+header, footer { text-align: center; padding: 22px 16px; }
+.layout { max-width: 1000px; margin: auto; padding: 20px; }
+.model-area { display: flex; justify-content: center; padding: 16px; }
+.margin-layer { width: min(620px, 100%); padding: 28px; background: #f9d8a8; outline: 2px dashed #b97728; text-align: center; }
+.border-layer { padding: 18px; border: 9px solid #5278b9; background: #dce7f7; }
+.padding-layer { padding: 26px; background: #c8eedc; }
+.content-layer { padding: 22px; background: #fff; border: 1px solid #9db8a9; font-weight: 700; }
+.content-layer small { font-weight: 400; }
+.layer-label { display: block; margin-bottom: 8px; font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
+.explanations { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin: 22px 0; }
+.explanations article, .sizing-demo article { padding: 18px; border-radius: 10px; background: white; box-shadow: 0 4px 12px #23365412; }
+.explanations h2, .sizing-demo h2 { margin-top: 0; font-size: 1.05rem; }
+.explanations p, .sizing-demo p { line-height: 1.55; color: #5b667a; }
+.sizing-demo { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; padding: 20px 0; }
+.sizing-demo article { width: 220px; }
+.default-box { box-sizing: content-box; border: 6px solid #e49b59; padding: 16px; }
+.border-box { box-sizing: border-box; border: 6px solid #5d9b83; padding: 16px; }
+footer { color: #65738a; }

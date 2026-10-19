@@ -1,0 +1,15 @@
+/* Base styles keep the demonstration readable and centered. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #172033; background: #f4f7fb; }
+.page-header, footer { text-align: center; padding: 24px 16px; }
+.page-header { background: #e2eaf8; }
+.box-gallery { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 20px; padding: 36px 20px; }
+.demo-box { width: 190px; min-height: 150px; background: white; border-width: 5px; border-color: #4169a1; transition: border-color 0.3s ease, transform 0.3s ease; }
+.demo-box:hover { border-color: #e4572e; transform: translateY(-4px); }
+.demo-box h2 { margin-top: 0; }
+.solid { border-style: solid; padding: 12px; }
+.dashed { border-style: dashed; padding: 20px; }
+.double { border-style: double; border-width: 7px; padding: 28px; }
+.groove { border-style: groove; padding: 16px; }
+.rounded { border-style: solid; border-radius: 24px; padding: 22px; }
+footer { color: #536078; }

@@ -1,0 +1,11 @@
+/* Flexbox centers all examples in both directions. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f7f5ff; color: #24203b; }
+header, footer { text-align: center; padding: 20px; }
+.stage { min-height: 65vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 24px; padding: 24px; }
+.size-box { padding: 18px; border-radius: 14px; box-shadow: 0 8px 20px #29204b1a; }
+.size-box h2 { margin-top: 0; }
+.pixels { width: 220px; height: 150px; background: #cde9ff; }
+.percent { width: 30%; min-width: 220px; min-height: 10em; max-width: 340px; background: #d8f5dc; }
+.viewport { width: 24vw; min-width: 220px; height: 25vh; max-width: 300px; overflow: auto; background: #ffe0c2; }
+footer { color: #615a7c; }
