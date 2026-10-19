@@ -1,0 +1,25 @@
+/* Header uses Flexbox; the three main sections use CSS Grid. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #243047; background: #f5f8fc; animation: fadeIn .7s ease-in-out both; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 18px 6%; background: white; border-bottom: 1px solid #e1e7ef; }
+.brand { font-weight: 800; font-size: 1.3rem; color: #2d5b9b; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 18px; }
+nav a { color: #536178; text-decoration: none; transition: color .25s ease; }
+nav a:hover { color: #b44e39; }
+.demo-grid { display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 22px; max-width: 1250px; margin: auto; padding: 30px 22px; }
+.demo-section { min-width: 0; padding: 22px; border: 1px solid #e0e6f0; border-radius: 16px; background: white; box-shadow: 0 8px 22px #21365112; transition: transform .25s ease, box-shadow .25s ease; }
+.demo-section:hover { transform: translateY(-4px); box-shadow: 0 14px 28px #2136511f; }
+.demo-section h2 { margin-top: 0; }
+.mini-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.mini-gallery img { width: 100%; height: 105px; object-fit: cover; border-radius: 8px; }
+.mini-gallery img:first-child { grid-column: span 2; height: 140px; }
+.demo-section p, .demo-section dd { color: #617087; line-height: 1.6; }
+.principles a { color: #2d5b9b; font-weight: 700; text-decoration: none; }
+.principles a:hover { text-decoration: underline; }
+dt { margin-top: 12px; font-weight: 800; color: #315b97; }
+dd { margin: 4px 0 0; }
+footer { padding: 18px; text-align: center; background: #192840; color: #edf2fb; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@media (max-width: 700px) { .site-header { flex-direction: column; } .demo-grid { grid-template-columns: 1fr; } .mini-gallery img { height: 150px; } .mini-gallery img:first-child { height: 190px; } }
+@media (prefers-reduced-motion: reduce) { body { animation: none; } *, *::before, *::after { transition-duration: .01ms !important; } }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="Q6_Responsive_CSS_Cheat_Sheet.css">
+</head>
+<body>
+  <header><h1>Responsive CSS Cheat Sheet</h1><p>Four essential concepts for layouts that work across screens.</p></header>
+  <main class="cheat-grid">
+    <article class="cheat-card"><h2>Filters</h2><p>Adjust the appearance of images and other elements.</p><code>filter: grayscale(100%);</code></article>
+    <article class="cheat-card"><h2>Media Queries</h2><p>Apply CSS rules only when a viewport matches a condition.</p><code>@media (max-width: 700px) { ... }</code></article>
+    <article class="cheat-card"><h2>Responsive Design</h2><p>Let layouts adapt to available width and device capabilities.</p><code>width: min(100%, 60rem);</code></article>
+    <article class="cheat-card"><h2>Typography</h2><p>Use fluid font sizes while keeping readable limits.</p><code>font-size: clamp(1rem, 2vw, 1.5rem);</code></article>
+    <article class="cheat-card"><h2>CSS Grid</h2><p>Build two-dimensional layouts with flexible tracks.</p><code>grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));</code></article>
+    <article class="cheat-card"><h2>Flexbox</h2><p>Align items in a row or column with flexible spacing.</p><code>display: flex; gap: 1rem;</code></article>
+  </main>
+  <footer><p>Keep this page nearby as a quick reference.</p></footer>
+</body>
+</html>

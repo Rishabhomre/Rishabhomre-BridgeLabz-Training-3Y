@@ -1,0 +1,18 @@
+/* Responsive grid uses the requested auto-fit and minmax pattern. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #223047; background: #f5f8fc; }
+.page-header, footer { text-align: center; padding: 24px 18px; }
+.page-header p { color: #647187; line-height: 1.6; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 22px; padding: 24px; max-width: 1200px; margin: auto; }
+.photo { margin: 0; overflow: hidden; border-radius: 14px; background: white; box-shadow: 0 8px 22px #1c304c18; }
+.photo img { display: block; width: 100%; height: 210px; object-fit: cover; transition: filter .4s ease, transform .4s ease; }
+.photo:hover img { filter: none; transform: scale(1.03); }
+.filter-blur { filter: blur(2px); }
+.filter-gray { filter: grayscale(100%); }
+.filter-sepia { filter: sepia(100%); }
+.filter-bright { filter: brightness(1.45); }
+.filter-contrast { filter: contrast(1.8); }
+.filter-hue { filter: hue-rotate(125deg); }
+figcaption { padding: 14px; font-weight: 700; text-align: center; }
+@media (max-width: 600px) { .gallery { grid-template-columns: 1fr; } .photo img { height: 240px; } }
+footer { color: #647187; }

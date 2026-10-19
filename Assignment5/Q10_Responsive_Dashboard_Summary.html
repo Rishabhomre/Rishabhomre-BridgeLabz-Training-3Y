@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard Summary</title>
+  <link rel="stylesheet" href="Q10_Responsive_Dashboard_Summary.css">
+</head>
+<body>
+  <header class="dashboard-header"><a href="#dashboard" class="brand">CSS Dashboard</a><span>Responsive learning overview</span></header>
+  <main id="dashboard" class="dashboard">
+    <aside class="sidebar">
+      <h2>Topics</h2>
+      <nav aria-label="Dashboard topics"><a href="#filters">Filters</a><a href="#typography">Typography</a><a href="#media">Media Queries</a><a href="#cheatsheet">Cheat Sheet Links</a></nav>
+    </aside>
+    <section class="dashboard-content">
+      <div class="welcome"><h1>Welcome back</h1><p>A quick overview of responsive CSS essentials.</p></div>
+      <div class="dashboard-cards">
+        <article class="dashboard-card" id="filters"><span class="card-icon">◈</span><h2>Filters</h2><p>Style images with grayscale, sepia, brightness, and more.</p><code>filter: grayscale(100%);</code></article>
+        <article class="dashboard-card" id="typography"><span class="card-icon">Aa</span><h2>Typography</h2><p>Use fluid text sizing for readable layouts on every device.</p><code>font-size: clamp(1rem, 2vw, 1.5rem);</code></article>
+        <article class="dashboard-card" id="media"><span class="card-icon">▦</span><h2>Media Queries</h2><p>Change layouts at breakpoints where the content needs it.</p><code>@media (max-width: 750px) { ... }</code></article>
+        <article class="dashboard-card" id="cheatsheet"><span class="card-icon">↗</span><h2>Cheat Sheet Links</h2><p>Keep short examples of Grid, Flexbox, and responsive units handy.</p><a href="#dashboard">Back to dashboard ↑</a></article>
+      </div>
+    </section>
+  </main>
+  <footer><p>CSS Dashboard · Learn one responsive concept at a time.</p></footer>
+</body>
+</html>

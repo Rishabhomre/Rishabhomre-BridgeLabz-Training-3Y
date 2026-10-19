@@ -1,0 +1,21 @@
+/* Cards fade in when the page loads and lift on hover. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #243047; background: #f6f8fc; }
+header, footer { text-align: center; padding: 24px 16px; }
+.profiles { display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 24px; padding: 28px 22px 42px; }
+.profile { flex: 1 1 260px; max-width: 340px; overflow: hidden; border: 1px solid #e0e6f0; border-radius: 16px; background: white; box-shadow: 0 8px 24px #1c304c14; animation: fadeIn .8s ease-in-out both; transition: transform .3s ease, box-shadow .3s ease; }
+.profile:nth-child(2) { animation-delay: .15s; }
+.profile:nth-child(3) { animation-delay: .3s; }
+.profile:hover { transform: translateY(-10px); box-shadow: 0 18px 34px #1c304c26; }
+.profile img { display: block; width: 100%; height: 250px; object-fit: cover; transition: filter .4s ease; }
+.gray { filter: grayscale(100%); }
+.sepia { filter: sepia(85%); }
+.muted { filter: saturate(45%); }
+.profile:hover img { filter: none; }
+.profile div { padding: 20px; }
+.profile h2 { margin: 0 0 8px; }
+.profile p { margin: 0; color: #637087; line-height: 1.6; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 800px) { .profiles { flex-direction: column; align-items: center; } .profile { width: 100%; max-width: 520px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+footer { color: #65738a; }

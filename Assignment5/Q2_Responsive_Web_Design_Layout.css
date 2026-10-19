@@ -1,0 +1,24 @@
+/* Flexbox aligns the logo and navigation and lays out feature cards. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; color: #243047; background: #f6f8fc; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 18px 6%; background: white; border-bottom: 1px solid #e1e7ef; }
+.logo { font-size: 1.45rem; font-weight: 800; color: #2e5b9b; text-decoration: none; }
+nav ul { display: flex; flex-wrap: wrap; gap: 22px; list-style: none; padding: 0; margin: 0; }
+nav a { color: #45546a; text-decoration: none; transition: color .25s ease; }
+nav a:hover { color: #b54c38; }
+main { flex: 1; }
+.hero { padding: 60px 20px 35px; text-align: center; background: linear-gradient(130deg, #e5efff, #f6edff); }
+.hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); margin: 0 0 12px; }
+.hero p, .about p { color: #647187; line-height: 1.7; }
+.features { display: flex; justify-content: center; gap: 22px; padding: 35px 6%; }
+.feature { flex: 1 1 0; max-width: 340px; padding: 26px; border: 1px solid #e0e6f0; border-radius: 15px; background: white; box-shadow: 0 6px 18px #23365212; transition: transform .3s ease, box-shadow .3s ease; }
+.feature:hover { transform: scale(1.035); box-shadow: 0 14px 28px #23365220; }
+.feature span { color: #5279b8; font-size: .85rem; font-weight: 800; }
+.feature p { color: #647187; line-height: 1.6; }
+.about { text-align: center; padding: 10px 20px 35px; }
+footer { margin-top: auto; padding: 18px; text-align: center; background: #192840; color: #edf2fb; }
+@media (max-width: 750px) {
+  .site-header { flex-direction: column; }
+  .features { flex-direction: column; align-items: center; }
+  .feature { width: 100%; max-width: 520px; }
+}
