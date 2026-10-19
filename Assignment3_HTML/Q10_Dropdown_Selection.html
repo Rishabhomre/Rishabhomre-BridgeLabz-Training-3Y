@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Preference Selection</title>
+</head>
+<body>
+    <h1>Select Your Travel Preferences</h1>
+    <!-- Each dropdown has a pre-selected option. Without JavaScript, selections do not dynamically update the paragraph. -->
+    <form action="#">
+        <p>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option selected>India</option><option>Nepal</option><option>Japan</option>
+            </select>
+        </p>
+        <p>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option selected>Uttar Pradesh</option><option>Rajasthan</option><option>Maharashtra</option>
+            </select>
+        </p>
+        <p>
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option selected>Mathura</option><option>Jaipur</option><option>Mumbai</option>
+            </select>
+        </p>
+        <p>
+            <label for="place">Favorite Tourist Place:</label>
+            <select id="place" name="place">
+                <option selected>Taj Mahal</option><option>Jaipur City Palace</option><option>Gateway of India</option>
+            </select>
+        </p>
+        <button type="submit">Submit Choices</button>
+    </form>
+    <p>Current example choices: Country — India; State — Uttar Pradesh; City — Mathura; Favorite Tourist Place — Taj Mahal.</p>
+</body>
+</html>
