@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #223348; background: #f3f6fa; line-height: 1.65; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 6%; background: #193b5a; color: white; }
+.logo { font-size: 1.35rem; font-weight: 800; color: white; text-decoration: none; }
+nav { display: flex; gap: 1.2rem; }
+nav a { color: white; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.layout { max-width: 1200px; margin: 2rem auto; padding: 0 1.2rem; display: grid; grid-template-columns: minmax(0, 2fr) minmax(230px, 1fr); gap: 1.5rem; }
+.main-article, .sidebar { padding: 1.7rem; border: 1px solid #dce4ec; border-radius: 12px; background: white; box-shadow: 0 6px 20px rgba(20, 40, 60, .07); }
+.animated-title { animation: titleIn .8s ease both; }
+.feature-boxes { display: flex; gap: 1rem; margin: 1.5rem 0; }
+.feature { flex: 1; padding: 1rem; border-radius: 9px; background: linear-gradient(145deg, #e4f1f6, #f4f8fb); border: 1px solid #cfdee7; }
+.feature h2 { margin-top: 0; font-size: 1.1rem; }
+.sidebar { align-self: start; }
+.sidebar li { margin: .7rem 0; }
+footer { text-align: center; padding: 1.2rem; color: white; background: #102a40; }
+footer p { margin: 0; }
+@keyframes titleIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 700px) {
+    .site-header { flex-direction: column; }
+    nav { flex-wrap: wrap; justify-content: center; }
+    .layout { grid-template-columns: 1fr; }
+    .feature-boxes { flex-direction: column; }
+}
