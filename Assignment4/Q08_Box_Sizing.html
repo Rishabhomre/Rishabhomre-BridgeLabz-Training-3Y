@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="Q08_Box_Sizing.css">
+</head>
+<body>
+  <header><h1>Box-Sizing Comparison</h1><p>Both examples declare the same CSS width and padding.</p></header>
+  <main>
+    <section class="comparison">
+      <article class="comparison-card content-box"><h2>content-box</h2><p>CSS width: 260px</p><p>Padding: 24px</p><p>Border: 6px</p><strong>Total rendered width: 320px</strong></article>
+      <article class="comparison-card border-box"><h2>border-box</h2><p>CSS width: 260px</p><p>Padding: 24px</p><p>Border: 6px</p><strong>Total rendered width: 260px</strong></article>
+    </section>
+    <section class="explanation"><h2>What changes?</h2><p>With <code>content-box</code>, the declared width covers only the content, so padding and borders are added outside it. With <code>border-box</code>, the declared width includes content, padding, and border.</p></section>
+  </main>
+  <footer><p>Predictable sizing makes responsive layouts easier to build.</p></footer>
+</body>
+</html>

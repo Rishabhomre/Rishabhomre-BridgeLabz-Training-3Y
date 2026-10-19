@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Components</title>
+  <link rel="stylesheet" href="Q07_UI_Components.css">
+</head>
+<body>
+  <header><h1>UI Components</h1><p>A compact set of common interface controls.</p></header>
+  <main>
+    <section class="ui-card">
+      <div class="component-block">
+        <label for="search">Search items</label>
+        <div class="search-row"><input id="search" type="search" placeholder="Try “design”"><button type="button">Search</button></div>
+      </div>
+      <div class="component-block">
+        <label for="category">Choose a category</label>
+        <select id="category" name="category"><option>All categories</option><option>Design</option><option>Development</option><option>Marketing</option></select>
+      </div>
+      <div class="component-block action-row">
+        <button class="primary" type="button">Save changes</button>
+        <button class="secondary" type="button">Cancel</button>
+      </div>
+      <p class="status">Your workspace is ready to use.</p>
+    </section>
+  </main>
+  <footer><p>Consistent UI components make interfaces easier to use.</p></footer>
+</body>
+</html>

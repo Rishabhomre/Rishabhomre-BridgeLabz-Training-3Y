@@ -1,0 +1,11 @@
+/* Flexbox centers the tooltip examples. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; color: #243047; background: #f7f8ff; }
+header, footer { text-align: center; padding: 22px 16px; }
+.tooltip-gallery { flex: 1; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 28px; padding: 40px 20px; }
+.tip-wrap { position: relative; display: inline-block; padding: 22px 25px; border: 1px solid #d7e0f0; border-radius: 12px; background: white; color: #31568d; font-weight: 700; cursor: help; box-shadow: 0 5px 16px #24385b12; }
+.tooltip { position: absolute; z-index: 1; left: 50%; bottom: calc(100% + 12px); width: 210px; padding: 10px 12px; border-radius: 8px; background: #17243a; color: white; text-align: center; font-size: .86rem; line-height: 1.45; font-weight: 400; opacity: 0; visibility: hidden; transform: translate(-50%, 5px); transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s ease-in-out; }
+.tooltip::after { content: ""; position: absolute; top: 100%; left: 50%; border: 7px solid transparent; border-top-color: #17243a; transform: translateX(-50%); }
+.tip-wrap:hover .tooltip, .tip-wrap:focus .tooltip { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+.tip-wrap:focus { outline: 3px solid #e6ad45; outline-offset: 4px; }
+footer { color: #65738a; }

@@ -1,0 +1,20 @@
+/* Soft gradient background and a card keep the components visually grouped. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; color: #243047; background: linear-gradient(135deg, #eaf2ff, #f7edff); }
+header, footer { text-align: center; padding: 22px 16px; }
+main { display: flex; justify-content: center; padding: 20px; }
+.ui-card { width: min(560px, 100%); padding: 30px; border: 1px solid #ffffff; border-radius: 18px; background: #ffffffd9; box-shadow: 0 14px 35px #253b611c; }
+.component-block { display: flex; flex-direction: column; gap: 9px; margin-bottom: 22px; }
+label { font-weight: 700; }
+input, select { width: 100%; min-width: 0; padding: 12px 14px; border: 1px solid #c2cde0; border-radius: 9px; background: white; font: inherit; }
+input:focus, select:focus { outline: 3px solid #9bbcff; outline-offset: 2px; border-color: #4877c2; }
+.search-row { display: flex; gap: 10px; }
+button { padding: 12px 16px; border: 0; border-radius: 9px; font: 700 .95rem Arial, sans-serif; cursor: pointer; transition: all .25s ease; }
+button:hover { transform: translateY(-2px); box-shadow: 0 6px 12px #243b6124; }
+button:focus-visible { outline: 3px solid #f0b43c; outline-offset: 3px; }
+.primary, .search-row button { background: #2c5da8; color: white; }
+.secondary { background: #e8edf5; color: #34445e; }
+.action-row { flex-direction: row; flex-wrap: wrap; }
+.status { margin: 0; padding: 12px; border-radius: 8px; background: #e8f7ef; color: #26704c; }
+footer { color: #65738a; }
+@media (max-width: 480px) { .ui-card { padding: 20px; } .search-row { flex-direction: column; } .search-row button { width: 100%; } }

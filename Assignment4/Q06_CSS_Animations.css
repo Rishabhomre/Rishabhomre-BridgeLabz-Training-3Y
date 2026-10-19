@@ -1,0 +1,18 @@
+/* Flexbox centers the animation cards and their contents. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; color: #243047; background: #f5f8fc; }
+header, footer { text-align: center; padding: 22px 16px; }
+.animation-stage { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 20px; padding: 24px 20px; }
+.animation-card { width: min(290px, 92vw); min-height: 270px; padding: 22px; border-radius: 15px; background: white; box-shadow: 0 8px 22px #1c304c14; text-align: center; }
+.animation-card h2 { margin-top: 0; }
+.animation-card p { line-height: 1.5; color: #667287; }
+.track { height: 58px; padding: 8px; border-radius: 10px; background: #edf2fb; }
+.moving-box { width: 40px; height: 40px; border-radius: 8px; background: #4169b2; animation: slide 2.4s ease-in-out infinite alternate; }
+@keyframes slide { from { transform: translateX(0); } to { transform: translateX(205px); } }
+.ball-area { height: 100px; display: flex; justify-content: center; align-items: flex-start; border-bottom: 2px solid #dfe5ef; }
+.ball { width: 32px; height: 32px; border-radius: 50%; background: #e76f51; animation: bounce .9s ease-in-out .3s infinite alternate; }
+@keyframes bounce { from { transform: translateY(0); } to { transform: translateY(58px); } }
+.color-text { font-size: 1.6rem; font-weight: 800; animation: colorCycle 3s ease-in-out 0s 3 alternate; }
+@keyframes colorCycle { 0% { color: #3156a3; } 50% { color: #9b4cb8; } 100% { color: #df6c43; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+footer { color: #65738a; }
