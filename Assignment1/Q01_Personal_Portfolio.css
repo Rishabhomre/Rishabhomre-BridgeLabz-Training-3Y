@@ -1,0 +1,49 @@
+/* Q1: Flexbox keeps the footer at the bottom when content is short. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f7f6;
+    color: #163b3a;
+    line-height: 1.6;
+}
+.page { min-height: 100vh; display: flex; flex-direction: column; }
+.site-header {
+    position: fixed; /* Stays at the top while scrolling. */
+    inset: 0 0 auto 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6%;
+    background: #163b3a;
+    color: #fff;
+}
+.brand { color: #fff; font-size: 1.25rem; font-weight: 700; text-decoration: none; }
+nav { display: flex; gap: 1.2em; }
+nav a { color: #fff; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { flex: 1; padding-top: 5.5rem; }
+.hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    padding: 5rem 8%;
+}
+.bio { max-width: 34rem; }
+.eyebrow { font-size: 0.8rem; letter-spacing: 0.12em; font-weight: 700; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.1; margin: 0.5em 0; }
+.bio p { font-size: 1.1rem; }
+.profile-image { width: 30%; max-width: 18rem; min-width: 10rem; border-radius: 50%; border: 5px solid #fff; box-shadow: 0 12px 30px #163b3a25; }
+.button { display: inline-block; margin-top: 1rem; padding: 0.75em 1.4em; background: #087f70; color: white; text-decoration: none; border-radius: 6px; }
+.extra { padding: 2rem 8%; background: #dcefeb; }
+footer { margin-top: auto; padding: 1.2rem 6%; text-align: center; background: #163b3a; color: white; }
+@media (max-width: 600px) {
+    .site-header { align-items: flex-start; gap: 0.5rem; flex-direction: column; }
+    nav { gap: 1rem; }
+    .hero { flex-direction: column-reverse; text-align: center; padding-top: 3rem; }
+    .profile-image { width: 55%; }
+}

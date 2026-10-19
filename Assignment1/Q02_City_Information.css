@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, serif; color: #202a35; line-height: 1.7; }
+header { padding: 3rem 1rem; text-align: center; color: white; background: #253e56; }
+header h1 { font-size: 2.8rem; margin: 0; font-weight: 800; }
+nav { display: flex; justify-content: center; gap: 2rem; padding: 1rem; background: #e6edf3; }
+nav a { color: #173b5a; font-weight: bold; text-decoration: none; }
+section { min-height: 55vh; padding: 5rem 10%; border-bottom: 5px solid rgba(20, 40, 60, 0.15); background-size: cover; background-position: center; }
+/* Two sections use fixed backgrounds to create a parallax-like effect. */
+.heritage { color: white; background-image: linear-gradient(110deg, rgba(25, 40, 55, .88), rgba(50, 80, 95, .35)), url("https://placehold.co/1600x900/657d8a/ffffff?text=Mathura+Heritage"); background-attachment: fixed; }
+.culture { background: radial-gradient(circle at top right, #fff4d8, #e5b66c 60%, #bd7b3b); }
+.visit { color: white; background-image: linear-gradient(rgba(22, 48, 65, .72), rgba(22, 48, 65, .72)), url("https://placehold.co/1600x900/819b9c/ffffff?text=Explore+Mathura"); background-attachment: fixed; }
+h2 { font-size: 2.2rem; font-weight: 700; }
+p { max-width: 48rem; font-size: 1.1rem; }
+footer { text-align: center; padding: 1.5rem; background: #253e56; color: white; }
+@media (max-width: 600px) { section { padding: 3rem 1.2rem; } .heritage, .visit { background-attachment: scroll; } nav { gap: 1rem; flex-wrap: wrap; } }

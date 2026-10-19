@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Dashboard</title>
+    <link rel="stylesheet" href="Q08_Dashboard_Layout.css">
+</head>
+<body>
+    <header class="topbar"><h1>Learning Dashboard</h1><p>Welcome back, Rishabh</p></header>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <nav><a href="#overview">Overview</a><a href="#courses">My Courses</a><a href="#tasks">Tasks</a><a href="#settings">Settings</a></nav>
+        </aside>
+        <main class="content" id="overview">
+            <h2>Overview</h2>
+            <section class="cards">
+                <article class="box"><h3>Course Progress</h3><p>You have completed 7 of 10 learning modules.</p><p><strong>70%</strong> complete</p></article>
+                <article class="box"><h3>Upcoming Tasks</h3><p>Finish the HTML assignment and review CSS layout concepts.</p><p><strong>2 tasks</strong> remaining</p></article>
+                <article class="box" id="courses"><h3>My Courses</h3><p>HTML Fundamentals</p><p>CSS Essentials</p></article>
+                <article class="box" id="tasks"><h3>Recent Activity</h3><p>Last session: practicing semantic HTML and responsive layouts.</p></article>
+            </section>
+            <section id="settings"><h2>Settings</h2><p>Dashboard settings can be added here.</p></section>
+        </main>
+    </div>
+</body>
+</html>
