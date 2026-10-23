@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Q2_StudentForm.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Student Registration</h1>
+        <form id="studentForm" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <small class="error" id="nameError"></small>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <small class="error" id="emailError"></small>
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" maxlength="10" required>
+            <small class="error" id="phoneError"></small>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+            <small class="error" id="passwordError"></small>
+
+            <button type="submit">Register</button>
+            <p id="formMessage" role="status"></p>
+        </form>
+    </main>
+    <script src="Q2_StudentForm.js"></script>
+</body>
+</html>

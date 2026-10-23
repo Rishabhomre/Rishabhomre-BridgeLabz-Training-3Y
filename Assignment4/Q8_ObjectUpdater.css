@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; font-family: Arial, sans-serif; background: #f3f6fb; color: #172033; }
+.container { max-width: 520px; margin: 30px auto; padding: 28px; background: white; border-radius: 14px; box-shadow: 0 8px 28px #15223816; }
+label { display: block; margin: 14px 0 6px; font-weight: 600; }
+input { width: 100%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 7px; font: inherit; }
+button { margin-top: 18px; padding: 11px 18px; border: 0; border-radius: 7px; background: #2563eb; color: white; cursor: pointer; }
+pre { padding: 16px; border-radius: 7px; background: #f8fafc; white-space: pre-wrap; }

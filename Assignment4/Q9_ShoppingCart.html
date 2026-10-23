@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="Q9_ShoppingCart.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Shopping Cart</h1>
+        <section id="cartItems"></section>
+        <p id="subtotal"></p>
+        <form id="couponForm">
+            <label for="coupon">Coupon code (e.g. SAVE20 or DISC10)</label>
+            <input id="coupon" name="coupon" type="text" placeholder="SAVE20" required>
+            <button type="submit">Apply Coupon</button>
+        </form>
+        <p id="couponMessage" role="status"></p>
+        <section id="cartSummary"></section>
+    </main>
+    <script src="Q9_ShoppingCartBrowser.js"></script>
+</body>
+</html>
