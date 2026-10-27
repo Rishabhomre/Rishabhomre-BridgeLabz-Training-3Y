@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 7 - JavaScript DOM Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+  <header class="page-header">
+    <h1>Assignment 7: JavaScript DOM Tasks</h1>
+    <p>HTML, CSS and core JavaScript (ES6+) — no frameworks</p>
+  </header>
+
+  <main class="container">
+    <section class="task-card" id="task1">
+      <h2>1. Dynamic Product List Manager</h2>
+      <form id="productForm" class="inline-form">
+        <input id="productInput" type="text" placeholder="Enter a product name" aria-label="Product name">
+        <button type="submit">Add Product</button>
+      </form>
+      <ul id="productList" class="product-list"></ul>
+    </section>
+
+    <section class="task-card" id="task2">
+      <h2>2. Live Character Counter</h2>
+      <textarea id="messageInput" maxlength="100" rows="4" placeholder="Write up to 100 characters..."></textarea>
+      <p id="characterCounter" class="counter" aria-live="polite">100 characters remaining</p>
+      <button id="resetMessage" type="button" class="secondary-button">Reset</button>
+    </section>
+
+    <section class="task-card" id="task3">
+      <h2>3. Multi-Step Form</h2>
+      <form id="multiStepForm" novalidate>
+        <div class="form-step active" data-step="0">
+          <label for="stepName">Step 1 — Name</label>
+          <input id="stepName" name="name" type="text" required>
+          <p class="inline-error" id="nameStepError"></p>
+        </div>
+        <div class="form-step" data-step="1">
+          <label for="stepEmail">Step 2 — Email</label>
+          <input id="stepEmail" name="email" type="email" required>
+          <p class="inline-error" id="emailStepError"></p>
+        </div>
+        <div class="form-step" data-step="2">
+          <label for="stepPassword">Step 3 — Password</label>
+          <input id="stepPassword" name="password" type="password" minlength="6" required>
+          <p class="inline-error" id="passwordStepError"></p>
+        </div>
+        <div class="button-row">
+          <button id="stepBack" type="button" class="secondary-button" disabled>Back</button>
+          <button id="stepNext" type="button">Next</button>
+        </div>
+        <div id="multiStepSummary" class="success-message" hidden></div>
+      </form>
+    </section>
+
+    <section class="task-card" id="task4">
+      <h2>4. Theme Switcher</h2>
+      <p>Choose a theme. The selected theme is saved in <code>data-theme</code> on the body.</p>
+      <div class="button-row">
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+        <button type="button" data-theme-choice="blue">Blue</button>
+      </div>
+      <p id="currentThemeText" aria-live="polite">Current theme: light</p>
+    </section>
+
+    <section class="task-card" id="task5">
+      <h2>5. Image Gallery with Modal Preview</h2>
+      <p>Click an image to view it larger. Click the dark background to close.</p>
+      <div id="imageGallery" class="image-gallery">
+        <img src="https://picsum.photos/id/1015/300/200" alt="Mountain river">
+        <img src="https://picsum.photos/id/1016/300/200" alt="Forest landscape">
+        <img src="https://picsum.photos/id/1025/300/200" alt="Dog portrait">
+        <img src="https://picsum.photos/id/1035/300/200" alt="Coastal landscape">
+        <img src="https://picsum.photos/id/1043/300/200" alt="Green hills">
+        <img src="https://picsum.photos/id/1069/300/200" alt="Ocean waves">
+      </div>
+      <div id="imageModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-label="Image preview">
+          <button id="closeModal" type="button" class="modal-close" aria-label="Close preview">&times;</button>
+          <img id="modalImage" src="" alt="Large image preview">
+          <p id="modalCaption"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="task-card" id="task6">
+      <h2>6. Real-Time Student Table Filter</h2>
+      <input id="studentSearch" type="search" placeholder="Search by name, branch or CGPA..." aria-label="Search students">
+      <p id="noStudentResults" class="inline-error" hidden>No results found</p>
+      <div class="table-wrapper">
+        <table id="studentTable">
+          <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+          <tbody>
+            <tr><td>Aarav Sharma</td><td>CSE</td><td>8.4</td></tr>
+            <tr><td>Priya Singh</td><td>AI &amp; DS</td><td>9.1</td></tr>
+            <tr><td>Rahul Verma</td><td>ECE</td><td>7.8</td></tr>
+            <tr><td>Neha Gupta</td><td>CSE</td><td>8.9</td></tr>
+            <tr><td>Arjun Patel</td><td>Mechanical</td><td>7.5</td></tr>
+            <tr><td>Simran Kaur</td><td>AI &amp; DS</td><td>8.7</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="task-card" id="task7">
+      <h2>7. Mouse Path &amp; Coordinates Logger</h2>
+      <p>Move the mouse inside the box. Double-click to drop a red dot.</p>
+      <p id="mouseCoordinates" class="counter">clientX: —, clientY: —</p>
+      <div id="mouseTrackingBox" class="mouse-box" aria-label="Mouse tracking area"></div>
+    </section>
+
+    <section class="task-card" id="task8">
+      <h2>8. Custom Dropdown (No select tag)</h2>
+      <div id="customDropdown" class="custom-dropdown">
+        <button id="dropdownToggle" type="button" aria-expanded="false">Choose a course ▾</button>
+        <div id="dropdownOptions" class="dropdown-options" hidden>
+          <button type="button" class="dropdown-option">HTML &amp; CSS</button>
+          <button type="button" class="dropdown-option">JavaScript</button>
+          <button type="button" class="dropdown-option">Python</button>
+          <button type="button" class="dropdown-option">Data Science</button>
+        </div>
+      </div>
+      <p id="dropdownSelection">Selected: none</p>
+    </section>
+
+    <section class="task-card" id="task9">
+      <h2>9. Form Submit Blocker with Live Errors</h2>
+      <form id="validationForm" novalidate>
+        <label for="fullName">Name</label>
+        <input id="fullName" name="fullName" type="text" autocomplete="name">
+        <p class="inline-error" id="fullNameError"></p>
+
+        <label for="formEmail">Email</label>
+        <input id="formEmail" name="email" type="text" autocomplete="email">
+        <p class="inline-error" id="formEmailError"></p>
+
+        <label for="formPassword">Password</label>
+        <input id="formPassword" name="password" type="password" autocomplete="new-password">
+        <p class="inline-error" id="formPasswordError"></p>
+
+        <button type="submit">Submit Form</button>
+        <p id="formSuccessMessage" class="success-message" role="status" hidden>Form Submitted Successfully</p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>Assignment 7 — Practice project</p></footer>
+
+  <script src="js/q1-product-manager.js"></script>
+  <script src="js/q2-character-counter.js"></script>
+  <script src="js/q3-multistep-form.js"></script>
+  <script src="js/q4-theme-switcher.js"></script>
+  <script src="js/q5-image-gallery.js"></script>
+  <script src="js/q6-table-filter.js"></script>
+  <script src="js/q7-mouse-tracker.js"></script>
+  <script src="js/q8-custom-dropdown.js"></script>
+  <script src="js/q9-form-validator.js"></script>
+</body>
+</html>
