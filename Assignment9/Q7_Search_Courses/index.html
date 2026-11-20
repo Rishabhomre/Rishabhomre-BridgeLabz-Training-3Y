@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q7 – Search Courses – Assignment 9</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #f4f6f9; color: #222; }
+    main { max-width: 950px; margin: auto; background: white; padding: 24px; border-radius: 12px; box-shadow: 0 2px 12px #0001; }
+    h1 { margin-top: 0; color: #183153; }
+    button { cursor: pointer; padding: 9px 14px; margin: 5px 4px 5px 0; border: 0; border-radius: 6px; background: #2457a7; color: white; }
+    input { padding: 9px; margin: 5px 0; border: 1px solid #bbb; border-radius: 5px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(170px,1fr)); gap: 12px; }
+    .card, .item { padding: 14px; border: 1px solid #ddd; border-radius: 8px; margin: 8px 0; background: #fff; }
+    .selected, .highlight { background: #fff2b3 !important; border: 2px solid #e0a800 !important; }
+    .muted { color: #666; }
+    .message { color: #16733a; font-weight: bold; }
+    [hidden] { display: none !important; }
+  </style>
+  
+</head>
+<body>
+<main>
+  <header><h1>Q7 – Search Courses</h1><p class="muted">Assignment 9 – jQuery Practical</p></header>
+
+<section>
+  <label for="courseSearch">Search courses:</label>
+  <input id="courseSearch" type="search" placeholder="Type a course name...">
+  <p id="courseCount" aria-live="polite"></p>
+  <div id="courseList">
+    <article class="course item"><h3>Python Programming</h3><p>Learn Python basics and projects.</p></article>
+    <article class="course item"><h3>Data Science</h3><p>Explore data analysis and visualization.</p></article>
+    <article class="course item"><h3>Web Development</h3><p>Build websites using HTML and CSS.</p></article>
+    <article class="course item"><h3>Machine Learning</h3><p>Train predictive models with data.</p></article>
+    <article class="course item"><h3>Database Management</h3><p>Learn SQL and database design.</p></article>
+  </div>
+  <button id="clearSearch">Clear Search</button>
+</section>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

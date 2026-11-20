@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3 – Interactive FAQ – Assignment 9</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #f4f6f9; color: #222; }
+    main { max-width: 950px; margin: auto; background: white; padding: 24px; border-radius: 12px; box-shadow: 0 2px 12px #0001; }
+    h1 { margin-top: 0; color: #183153; }
+    button { cursor: pointer; padding: 9px 14px; margin: 5px 4px 5px 0; border: 0; border-radius: 6px; background: #2457a7; color: white; }
+    input { padding: 9px; margin: 5px 0; border: 1px solid #bbb; border-radius: 5px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(170px,1fr)); gap: 12px; }
+    .card, .item { padding: 14px; border: 1px solid #ddd; border-radius: 8px; margin: 8px 0; background: #fff; }
+    .selected, .highlight { background: #fff2b3 !important; border: 2px solid #e0a800 !important; }
+    .muted { color: #666; }
+    .message { color: #16733a; font-weight: bold; }
+    [hidden] { display: none !important; }
+  </style>
+  
+</head>
+<body>
+<main>
+  <header><h1>Q3 – Interactive FAQ</h1><p class="muted">Assignment 9 – jQuery Practical</p></header>
+
+<section id="faq">
+  <article class="item faq-item"><h3 class="question" tabindex="0">What is jQuery?</h3><div class="answer" hidden><p>jQuery is a JavaScript library that simplifies DOM manipulation and events.</p><label>Ask a follow-up: <input type="text" placeholder="Type here"></label></div></article>
+  <article class="item faq-item"><h3 class="question" tabindex="0">Is jQuery free?</h3><div class="answer" hidden><p>Yes. jQuery is open-source and free to use.</p><label>Ask a follow-up: <input type="text" placeholder="Type here"></label></div></article>
+  <article class="item faq-item"><h3 class="question" tabindex="0">Can jQuery work with HTML5?</h3><div class="answer" hidden><p>Yes. It works with modern HTML5 documents.</p></div></article>
+  <article class="item faq-item"><h3 class="question" tabindex="0">What does an event handler do?</h3><div class="answer" hidden><p>It runs code when a user action, such as a click, occurs.</p></div></article>
+  <article class="item faq-item"><h3 class="question" tabindex="0">How do I select an element?</h3><div class="answer" hidden><p>Use a jQuery selector such as $('#id') or $('.class').</p></div></article>
+</section>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
